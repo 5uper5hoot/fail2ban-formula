@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "fail2ban/ng/map.jinja" import fail2ban with context %}
+{% from "fail2ban/map.jinja" import fail2ban with context %}
 
-fail2ban.ng.install:
+fail2ban.install:
   pkg.installed:
     - name: {{ fail2ban.package }}
